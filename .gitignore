@@ -32,6 +32,12 @@ evaluation/scoreboard.csv
 data/*
 !data/README.md
 
+# features.py reduces the ATD to a per-frame table and caches it here. It carries the ball's
+# position on every frame of the match, which is a frame-level tracking export in exactly the
+# sense RULES.md forbids publishing -- derived data that would reconstruct the gated original. It
+# rebuilds from the bundle in about two seconds, so there is no reason to carry it.
+cache/
+
 *.mp4
 *.gzip
 *.pl3container
