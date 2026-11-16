@@ -1,5 +1,23 @@
 # More than a Hack 2027 — Phase 1: Ball Possession
 
+> ## This repository is a submission
+>
+> Frame-level ball possession for BAR-ATH. The approach, the possession rules and the
+> limitations are in **[TECHNICAL.md](TECHNICAL.md)**.
+>
+> ```bash
+> pip install -r requirements.txt   # numpy, pandas -- nothing else
+> python features.py                # ATD -> cache/features_BAR-ATH_tactical.npz   (~2 s)
+> python solve.py                   # -> evaluation/results/hmm.csv                (~6 s)
+> python evaluation/validate_submission.py evaluation/results/hmm.csv
+> ```
+>
+> `data/` is empty here on purpose: the match data is not redistributable. Lay it out as
+> [DATA.md](DATA.md) specifies -- only the tactical ATD (`.txt` + `.xml`) and the Smart Tagging
+> `.xml` are read. The videos and both homography files are never opened.
+
+---
+
 **Organised by [Metrica Sports](https://metrica-sports.com), [FC Barcelona](https://www.fcbarcelona.com)
 and the [Mobile World Capital Barcelona](https://www.mwcbarcelona.com)**, at the Talent Arena in Barcelona.
 
