@@ -7,6 +7,7 @@
 >
 > ```bash
 > pip install -r requirements.txt   # numpy, pandas -- nothing else
+> #                                 verified on python 3.14.3, numpy 2.4.4, pandas 3.0.2
 > python features.py                # ATD -> cache/features_BAR-ATH_tactical.npz   (~2 s)
 > python solve.py                   # -> evaluation/results/hmm.csv                (~6 s)
 > python evaluation/validate_submission.py evaluation/results/hmm.csv
